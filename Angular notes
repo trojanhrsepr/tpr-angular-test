@@ -1,0 +1,21 @@
+Angular component is used to render a portion of HTML and provide functionality to that portion. Through component class which helps define application logic for it.
+Each component has a selector used to identify as HTML tags within component form. Easy wiring of DOM events and variables from DB into component
+
+Directives provide functionality and can transform a DOM. Component is a type of directive:
+Structural Directive: Add or remove DOM element using this. Eg. NgIf *ngIf is inline
+Attribute Directive
+
+Angular pipes: Template expression operator that takes in a value and returns a new value representation
+
+Effective data binding to achieve UI implementation without script code , provides support for validation and error handling of data for forms in UI side
+
+Dependency injection allows us to write decoupled code which can be injected at any point to proivde more modularity and reusability. Modular components and services.
+Dependency injection through bootstrap makes sure your code is available all through the application as an instance.
+
+Use of services: MVC Framework, JS or TS code for logic
+
+Data persistence: data survives after the process with which it was created has ended. In other words, for a data store to be considered persistent, it must write to non-volatile storage.
+In Angular through In Memory by creating a component or dependency injection wherever needed or by using external objects like XHR or JSONP for Rest calls
+
+Client side routing without server side interaction (Sub URL routing)
+

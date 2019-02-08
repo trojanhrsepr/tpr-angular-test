@@ -1,0 +1,11 @@
+<header>
+  <div>{{ mediaItems | customChange }}</div>
+</header>
+<section>
+  <test-component2
+    [ngClass]="{
+      'medium-movies': testObjectVar.surname==='Movies', 'medium-series': testObjectVar.surname==='Series'
+    }"
+    *ngFor="let testObjectVar of mediaItems; let i = index" [testObj]="testObjectVar"
+    (delete)="deleteValue($event)"></test-component2>
+</section>
