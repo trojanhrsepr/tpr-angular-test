@@ -1,0 +1,46 @@
+<header>
+  <h2>Template Driven Form Example</h2>
+</header>
+<form
+  #templatedrivenform="ngForm"
+  (ngSubmit)="onSubmit(templatedrivenform.value)">
+  <ul>
+    <li>
+      <label for="surname">Medium </label>
+      <select name="surname" id="surname" ngModel>
+        <option value="Movies">Movies</option>
+        <option value="Series">Series</option>
+      </select>
+    </li>
+    <li>
+      <label for="name">Name </label>
+      <input type="text" name="name" id="name" ngModel>
+    </li>
+    <li>
+      <label for="genre">Genre </label>
+      <select name="genre" id="genre" ngModel>
+        <option value="Science Fiction">Sci-Fi</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+      </select>
+    </li>
+    <li>
+      <label for="year">Year </label>
+      <input type="text" name="year" id="year" ngModel>
+    </li>
+    <li>
+      <!--Pending checkbox implementation
+      <label for="isFavorite"> Fav? </label>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <input type="checkbox" name="isFavorite" id="isFavorite" value="false" ngModel>
+      <div id="checkbox-value"></div>-->
+      <label for="isFavorite"> Fav? </label>
+      <select name="isFavorite" id="isFavorite" ngModel>
+        <option value="true">True</option>
+        <option value="false">False</option>
+      </select>
+    </li>
+  </ul>
+  <button type="submit">Save Form</button>
+</form>

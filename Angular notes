@@ -19,3 +19,7 @@ In Angular through In Memory by creating a component or dependency injection whe
 
 Client side routing without server side interaction (Sub URL routing)
 
+Types of Model-Driven Forms:
+Template Driven: Form logic in template markup
+Model Driven: Form logic in component class
+

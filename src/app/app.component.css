@@ -1,3 +1,16 @@
 h1, h2 {
   color: white;
 }
+button {
+  horiz-align: center;
+  vertical-align: top;
+  font-size: inherit;
+  padding: 0.2em;
+  /* the following ensures they're all using the same box-model for rendering */
+  -moz-box-sizing: content-box; /* or `border-box` */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 14%;
+  margin-left: 1%;
+  margin-right: 1%
+}
