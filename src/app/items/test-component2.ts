@@ -6,6 +6,7 @@ import {Component, Input, Output, EventEmitter} from "@angular/core";
   styleUrls: ['test-component2.css']
 })
 export class TestComponent2 {
+
   @Input() testObj;
   @Output() delete = new EventEmitter();
 

@@ -4,6 +4,7 @@ import {TestComponent} from "./items/test-component";
 import {MediaItemListComponent} from "./list/media-item-list.component";
 import {HelpComponent} from "./help/help-component";
 import {TemplateForm} from "./forms/new-form";
+import {ModelForm} from "./forms/model-form";
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'template-form',
     component: TemplateForm
+  },
+  {
+    path: 'model-form',
+    component: ModelForm
   },
   {
     path: '',

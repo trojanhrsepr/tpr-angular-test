@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestObjectService } from "../services/object-helper.service";
 
 @Component({
   selector: 'mw-media-item-list',
@@ -7,50 +8,16 @@ import { Component } from '@angular/core';
 })
 export class MediaItemListComponent {
 
-  onMediaItemDelete(mediaItem) { }
+  mediaItems;
+  constructor(
+    private testObjectService: TestObjectService,
+  ) {}
 
-  mediaItems = [
-    {
-      id: 1,
-      name: "Firebug",
-      surname: "Series",
-      class: "Science Fiction",
-      year: 2010,
-      watchedOn: 1294166565384,
-      isFavorite: false
-    },
-    {
-      id: 2,
-      name: "The Small Tall",
-      surname: "Movies",
-      class: "Comedy",
-      year: 2015,
-      watchedOn: null,
-      isFavorite: true
-    }, {
-      id: 3,
-      name: "The Redemption",
-      surname: "Movies",
-      class: "Action",
-      year: 2016,
-      watchedOn: null,
-      isFavorite: false
-    }, {
-      id: 4,
-      name: "Hoopers",
-      surname: "Series",
-      class: "Drama",
-      year: null,
-      watchedOn: null,
-      isFavorite: true
-    }, {
-      id: 5,
-      name: "Happy Joe: Cheery Road",
-      surname: "Movies",
-      class: "Action",
-      year: 2015,
-      watchedOn: 1457166565384,
-      isFavorite: false
-    }
-  ];
+  ngOnInit() {
+    this.mediaItems = this.testObjectService.get();
+  }
+
+  deleteValue(mediaItem) {
+    this.testObjectService.delete(mediaItem);
+  }
 }
