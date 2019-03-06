@@ -15,8 +15,9 @@ Each component has a selector used to identify as HTML tags within component for
 
 ###Directives
 Directives provide functionality and can transform a DOM. Component is a type of directive:
+Components: Directives with a template
 Structural Directive: Add or remove DOM element using this. Eg. NgIf *ngIf is inline
-Attribute Directive
+Attribute Directive: Change the appearance or behavior of an element, component, or another directive.
 
 ###Pipes
 Template expression operator that takes in a value and returns a new value representation
